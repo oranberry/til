@@ -6,6 +6,8 @@ Today I Learned
 * C++
 * CSS
 * Django
+* Express
+* Flask
 * Git
 * HTML
 * HTTP
@@ -13,6 +15,14 @@ Today I Learned
 * JavaScript
 * JQuery
 * Linux
+* MongoDB
+* NodeJS
+* Pug
 * Python
 * React
+* Sass(SCSS)
+* SocketIO
+* Tailwind CSS
+* WebRTC
+* WebSockets
 <hr/>
