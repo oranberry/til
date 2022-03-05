@@ -1,12 +1,15 @@
 /* Finds the largest and smallest Elements in an Array */
 #include <stdio.h>
-#define N 10
 
 void max_min(int a[], int n, int *max, int *min); /* prototype */
 
 int main(void) {
-    int b[N], i, big, small;
+    int i, N, big, small;
 
+    printf("Enter the numbers of elements in an array: ");
+    scanf("%d", &N);
+
+    int b[N];
     printf("Enter %d numbers: ", N);
     for(i = 0; i < N; i++){
         scanf("%d", &b[i]);
