@@ -1,4 +1,3 @@
-/* What are the values of x and y after calling swap(&x, &y) with the swap function defined as follows? */
 #include <stdio.h>
 void swap (int *a, int *b);
 int main()
@@ -6,6 +5,7 @@ int main()
   int x = 3, y = 4;
   swap(&x, &y);
   printf("The value of x is %d and y is %d\n", x, y);
+  /*** result: The value of x is 4 and y is 3 ***/
   return 0;
 }
 void swap(int *a, int *b)
@@ -14,11 +14,10 @@ void swap(int *a, int *b)
   *a = *b;
   *b = temp;
 }
-/* The value of x is 4 and y is 3 */
 
-/********************************************************************/
+/*****************************************************************
+ * without pointers
 
-/* without pointers 
 #include <stdio.h>
 void swap (int a, int b);
 int main()
@@ -26,7 +25,7 @@ int main()
   int x = 3, y = 4;
   swap(x, y);
   printf("The value of x is %d and y is %d\n", x, y); 
-  -> The value of x is 3 and y is 4 (can't get correct answer)
+  *** result: The value of x is 3 and y is 4 (not working swap function) ***
 
   return 0;
 }
@@ -36,4 +35,4 @@ void swap(int a, int b)
   a = b;
   b = temp;
 } 
-*/
+******************************************************************/
