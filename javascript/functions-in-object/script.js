@@ -1,23 +1,29 @@
 const calculator = {
     plus: function(a, b) {
-        console.log("10 + 5 = " + (a + b));
+        return a + b;
     },
     minus: function(a, b) {
-        console.log("10 - 5 = " + (a - b));
+        return a - b;
     },
-    division: function(a, b) {
-        console.log("10 / 5 = " + (a / b));
+    divide: function(a, b) {
+        return a / b;
     },
-    multi: function(a, b) {
-        console.log("10 * 5 = " + (a * b));
+    times: function(a, b) {
+        return a * b;
     },
-    powerOf: function(a, b) {
-        console.log("10 to the power of 5 is " + (a ** b));
+    power: function(a, b) {
+        return a ** b;
     },
 };
 
-calculator.plus(10, 5);
-calculator.minus(10, 5);
-calculator.division(10, 5);
-calculator.multi(10, 5);
-calculator.powerOf(10, 5);
+const plusResult = calculator.plus(10, 5);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, minusResult);
+
+console.log(plusResult);
+console.log(minusResult);
+console.log(timesResult);
+console.log(divideResult);
+console.log(powerResult);
