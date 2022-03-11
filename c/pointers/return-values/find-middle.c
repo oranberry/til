@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int *find_middle(int a[], int n);
 int main(){
     int N, i;
