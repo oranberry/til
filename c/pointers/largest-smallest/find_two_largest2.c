@@ -20,20 +20,23 @@ int main()
 void find_two_largest(int a[], int n, int *largest, int *second_largest)
 {
     int i;
+    int max, max2;
 
     if (a[0] > a[1]) {
-        *largest = a[0];
-        *second_largest = a[1];
+        max = a[0];
+        max2 = a[1];
     } else {
-        *largest = a[1];
-        *second_largest = a[0];
+        max = a[1];
+        max2 = a[0];
     }
 
     for (i = 2; i < n; i++){
-        if (a[i] > *largest) {
-            *second_largest = *largest;
-            *largest = a[i];
-        } else if (a[i] > *second_largest)
-            *second_largest = a[i];
+        if (a[i] > max) {
+            max2 = max;
+            max = a[i];
+        } else if (a[i] > max2)
+            max2 = a[i];
     }
+    *largest = max;
+    *second_largest = max2;
 }
