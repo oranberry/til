@@ -10,7 +10,7 @@ int main(void)
     scanf("%d", p);
   printf("In reverse order:");
   for (p = a + N - 1; p >= a; p--)
-    printf(" %d", *p);
+    printf("%d ", *p);
   printf("\n");
   return 0;
 }
