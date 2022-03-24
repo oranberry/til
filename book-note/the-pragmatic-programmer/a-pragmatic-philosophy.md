@@ -1,10 +1,3 @@
----
-title: A Pragmatic Philosophy
-date: 2022-03-23 -0400
-categories: [book_note, The_pragmatic_programmer]
-tags: [실용주의프로그래머, 개발자필독서, 노개북] # TAG names should always be lowercase
----
-
 # **1장 실용주의 철학 (A Pragmatic Philosophy)**
 
 ## **오늘의 TIL 요약**
