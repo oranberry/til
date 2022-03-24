@@ -1,0 +1,30 @@
+body {
+    height: 1000vh;
+    margin: 50px;
+}
+span {
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* p 밑에 있는 모든 span에 적용된다. */
+p span {
+    color: white;
+}
+/* 바로 밑의 자식 요소에만 적용된다. (direct children)
+div > span {
+    text-decoration: underline;
+}
+*/
+/* 바로 뒤에 오는 형제에 적용할 때 
+p + span {
+   text-decoration: underline;
+}
+*/
+/* 바로 뒤에 오지 않는 형제에 적용할 때 */
+p ~ span {
+    text-decoration: underline;
+}
+
+
+  

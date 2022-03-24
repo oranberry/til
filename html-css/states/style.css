@@ -1,0 +1,36 @@
+/* 마우스로 클릭하고 있을 때 효과 */
+button:active {
+    background-color: tomato;
+}
+/* 마우스가 위에 있을 때 효과 */
+button:hover {
+    background-color: thistle;
+}
+/* 키보드로 선택되었을 때 효과 */
+input:focus {
+    background-color: aquamarine;
+}
+/* 방문한 사이트 효과 */
+a:visited {
+    color: tomato;
+}
+a:hover {
+    color: teal;
+}
+form {
+    border: 1px solid salmon;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* focus-within은 부모 요소에 적용. 자식 요소 중 하나가 focused 되었을 때 효과 */
+form:focus-within {
+    border-color: seagreen;
+}
+/* 다른 요소와 연계해서 사용할 수 있다 */
+form:hover input {
+    background-color: sienna;
+}
+form:hover input:focus {
+    background-color: blueviolet;
+}

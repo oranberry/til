@@ -1,0 +1,19 @@
+body {
+    height: 1000vh;
+    margin: 50px;
+  }
+  span:nth-child(odd) {
+    background-color: pink;
+  }
+  span:nth-child(2n) {
+      background-color: wheat;
+  }
+  span:nth-child(2), span:nth-child(4){
+    background-color: teal;
+  }
+  span:first-child {
+    background-color: tomato;
+  }
+  span:last-child {
+    background-color: turquoise;
+  }

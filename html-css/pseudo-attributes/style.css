@@ -1,0 +1,19 @@
+body {
+    height: 1000vh;
+    margin: 50px;
+  }
+  span {
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  input {
+    border: 1px solid wheat;
+  }
+  input:required {
+    border: tomato;
+  }
+  /* attribute selector */
+  input[placeholder~="name"]{
+    background-color: pink;
+  }
