@@ -2,15 +2,23 @@
 
 ### Categories
 
+- API
 - Bootstrap
 - C
 - C++
-- CSS
+- Database
+- ExpressJS
 - Git
-- HTML
+- HTML/CSS
 - HTTP
-- Java
 - JavaScript
 - Linux
+- NodeJS
+- Pug
 - React
+- Reading Note
+- SCSS
+- SocketIO
+- TypeScript
+- Web RTC
 <hr/>
