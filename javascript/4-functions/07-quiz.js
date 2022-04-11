@@ -8,17 +8,23 @@ function iterate(max, action) {
     action(i);
   }
 }
-
+/* 숫자 그대로 출력 */
 function log(num) {
   console.log(num);
 }
+iterate(3, log);
+// 위와 같은 표현
+iterate(3, (num) => console.log(num));
 
+/* 두배 곱해서 출력 */
 function doubleAndLog(num) {
   console.log(num * 2);
 }
-iterate(3, (num) => console.log(num));
+iterate(3, doubleAndLog);
+// 위와 같은 표현
 iterate(3, (num) => console.log(num * 2));
 
+// 실제 콜백 함수 사용예
 setTimeout(() => {
   console.log('3초뒤 이 함수가 실행될거예요');
 }, 3000);

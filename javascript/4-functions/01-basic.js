@@ -1,8 +1,11 @@
 // 사용예제  1
 function sum(a, b) {
+    // const result = a + b;
+    // return result;
     console.log('function');
     return a + b;
 }
+// 함수는 호출하지 않으면 실행되지 않음.
 const result = sum(1, 2);
 console.log(result);
 
