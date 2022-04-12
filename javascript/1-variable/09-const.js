@@ -18,6 +18,7 @@ const apple = {
     display: '🍎',
 };
 // apple = {}; 불가능
+
 console.log(apple);
 apple.name = 'orange';
 apple.display = '🍏';
