@@ -4,12 +4,12 @@ function add(a, b){
     return undefined;
 }
 const result = add(1, 2);
-console.log(result);
+console.log(result); // undefined
 
 function print(text) {
     console.log(text);
 }
-print('text');
+print('text'); // text
 
 // return을 함수 중간에 하게 되면 함수가 종료됨
 // 사용예: 조건이 맞지 않는 경우 함수 도입부분에서 함수를 일찍이 종료!
@@ -19,6 +19,13 @@ function print(num) {
     }
     console.log(num);
 }
-print(12);
+print(12); // 12
 print(-12);
 
+// 한국 나이 계산 함수
+const age = 96;
+function calculateKrAge(birthYear) {
+    return 2022 - birthYear + 1;
+}
+const krAge = calculateKrAge(1993);
+console.log(krAge); // 30
