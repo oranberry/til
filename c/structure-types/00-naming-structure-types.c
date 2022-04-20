@@ -1,5 +1,9 @@
+// 💫 Structure Types
+// We need to be define a name that represents a type of structure, not a particular structure variable.
+// two ways to name structures:
+// 1. structure tag (more common)
+// 2. typedef
 
-// Repeating the structure information will bloat the program.
 // ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 struct
 {
@@ -17,7 +21,3 @@ struct
 
 // part1 and part2 don't have compatible types
 // Since we don't have a name for the type of part1 or part2, we can't use them as arguments in function calls
-
-// To avoid these difficulties, we need to be able to define a name that represents a type of structure,
-// not a particular structure variable.
-// There are two ways to name structures: structure tag or use typedef to define a type name

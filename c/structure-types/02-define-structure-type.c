@@ -1,6 +1,8 @@
 // 💫 Defining a Structure Type
 // As an alternative to declaring a structure tag, we can use typedef to define a genuine type name.
+
 // We could define a type named Part in the following way:
+#define NAME_LEN 25
 typedef struct
 {
     int number;

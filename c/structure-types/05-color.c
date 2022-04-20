@@ -1,7 +1,7 @@
 // Suppose we wish to store information about colors defined by three pieces of data:
 // red(an int), green(an int), and blue(an int)
 // Each piece is an integer in the range of 0 to 255.
-// Write a program that declares a struct named color
+// Write a program that declares a struct named color.
 
 #include <stdio.h>
 struct color
@@ -35,7 +35,7 @@ int main()
     return 0;
 }
 
-// Add the following functions:
+// 1. Add the following functions:
 // struct color make_color(int red, int greeen, int blue);
 // Returns a color structure containing the specified red, green, and blue values.
 // If any argument is less than zero, the corresponding member will contain zero instead.
@@ -64,7 +64,7 @@ struct color make_color(int red, int green, int blue)
     return c;
 }
 
-// Add the following functions:
+// 2. Add the following functions:
 // struct color brighter(struct color c);
 // Returns a color structure that represents a brighter version of the color c:
 // each member has been divied by 0.7
