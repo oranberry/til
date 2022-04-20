@@ -7,6 +7,7 @@ struct
     char name[NAME_LEN + 1];
     int on_hand;
 } part1 = {528, "Disk drive", 10}, part2 = {914, "Printer cable", 5};
+// The values in the initializer must appear in the same order as the members of the structure.
 
 // A structure variable can be initialized using an initializer list:
 struct part
@@ -21,3 +22,7 @@ int main()
     struct part part2 = {914, "Printer cable", 5};
     return 0;
 }
+
+// ✨ Members of a struct
+// Members of a struct can be any previously defined type
+// including arrays, other structs, and pointers

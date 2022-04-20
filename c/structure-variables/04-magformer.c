@@ -18,12 +18,12 @@ int main()
 
     printf("%s %s %d\n", m1.shape, m1.color, m1.quantity);
 
-    printf("Enter quantity: ");
-    scanf("%d", &m2.quantity);
-    printf("Enter shape ");
+    printf("Enter shape: ");
     scanf("%s", m2.shape);
     printf("Enter color: ");
     scanf("%s", m2.color);
+    printf("Enter quantity: ");
+    scanf("%d", &m2.quantity);
     printf("%s %s %d\n", m2.shape, m2.color, m2.quantity);
 
     printf("%d\n", compare_magformer(m1, m2));
