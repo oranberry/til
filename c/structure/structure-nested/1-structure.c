@@ -20,6 +20,7 @@ struct student
     int id, age;
     char sex;
 } student1, student2;
+
 int main()
 {
     // Accessing student1's first name, middle initial, or last name
