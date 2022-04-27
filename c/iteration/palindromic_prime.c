@@ -1,3 +1,7 @@
+// A palindromic prime is a prime number that is also palindromic.
+// For example, 11 is a prime and also palindromic, as are 181 and 787.
+// However, 13 is a prime but not palindromic.
+
 #include <stdio.h>
 
 int main()
