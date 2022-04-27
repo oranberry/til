@@ -2,8 +2,8 @@
 #include <string.h>
 int main()
 {
-  char str1[10]="hello";
-  char str2[10]="hello";
+  char str1[10] = "hello";
+  char str2[10] = "hello";
 
   char str3[20];
   strcpy(str3, str1);
