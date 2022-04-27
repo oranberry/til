@@ -5,7 +5,6 @@
 #include <stdio.h>
 int main(void)
 {
-
 	int num_quarters = 6;
 	int num_dimes = 10;
 	int num_nickels = 3;

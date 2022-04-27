@@ -1,6 +1,6 @@
 // 💫 Reading Input - scanf()
 // scanf requires a format string to specify the appearance of the input data.
-// The & symbol (the address operator) is usually required when using scanf.
+// The ✨ & symbol (the address operator) ✨ is usually required when using scanf.
 // It provides the address of the variable in the memory.
 // scanf ignores white-space characters (space, tab, and new-line).
 
@@ -16,6 +16,7 @@ int main()
 
     // Reading a double value requires a call of scanf:
     // "%lf" tells scanf to look for an input value in double format (l stands for long)
+    // "%f" - float
     scanf("%lf", &x);
 
     // A call of scanf that reads four numbers:

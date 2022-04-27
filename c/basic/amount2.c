@@ -1,10 +1,9 @@
-// Modify your previous program so that the number of quarters, dimes, nickels, and pennies are entered by the user.
+// Modify your previous program
+// so that the number of quarters, dimes, nickels, and pennies are entered by the user.
 
 #include <stdio.h>
-
 int main(void)
 {
-
 	int num_quarters = 0;
 	int num_dimes = 0;
 	int num_nickels = 0;

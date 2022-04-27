@@ -1,6 +1,5 @@
 /* Classifies a poker hand */
-
-#include <stdbool.h> /* C99 only */
+#include <stdbool.h> // C99 only
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +11,7 @@
 int num_in_rank[NUM_RANKS];
 int num_in_suit[NUM_SUITS];
 bool straight, flush, four, three;
-int pairs; /* can be 0, 1, or 2 */
+int pairs; // can be 0, 1, or 2
 
 /* prototypes */
 void read_cards(void);

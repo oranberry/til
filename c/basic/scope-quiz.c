@@ -2,20 +2,19 @@
 
 // The most important scope rule: When a declaration inside a block names an identifier that’s already visible,
 // the new declaration temporarily “hides” the old one, and the identifier takes on a new meaning.
-
 // At the end of the block, the identifier regains its old meaning.
 
-int i;
-void f(int i)
+int i;        /* Declaration 1 */
+void f(int i) /* Declaration 2 */
 {
     i = 1;
 }
 void g(void)
 {
-    int i = 2;
+    int i = 2; /* Declaration 3 */
     if (i > 0)
     {
-        int i;
+        int i; /* Declaration 4 */
         i = 3;
     }
     i = 4;

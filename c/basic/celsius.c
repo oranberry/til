@@ -1,9 +1,8 @@
-// Converts a Fahrenheit temperature to Celsius
+// Converts a Fahrenheit temperature to Celsius temperature
 #include <stdio.h>
-
 #define FREEZING_PT 32.0
-#define SCALE_FACTOR (5.0 / 9.0)
-// Defining SCALE_FACTOR to be (5.0 / 9.0) instead of (5 / 9) is important
+#define SCALE_FACTOR (5.0 / 9.0) // ❌❌ (5 / 9) ❌❌
+// ⚠️ Defining SCALE_FACTOR to be (5.0 / 9.0)  is important
 
 int main(void)
 {
