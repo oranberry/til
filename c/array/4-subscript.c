@@ -10,10 +10,11 @@ for (i = 0; i < N; i++)
 for (i = 0; i < N; i++)
     sum += a[i]; /* sums the elements of a */
 
-// C doesn’t require that subscript bounds be checked; if a subscript goes out of range, the program’s behavior is undefined.
+// C doesn’t require that subscript bounds be checked;
+// if a subscript goes out of range, the program’s behavior is undefined.
 
-// ⚠️ A common mistake: forgetting that an array with n elements is indexed from 0 to n – 1, not 1 to n:
+// ⚠️ A common mistake ⚠️
 int a[10], i;
-
-for (i = 1; i <= 10; i++) // ❌❌❌
+// forgetting that an array with n elements is indexed from 0 to n – 1, not 1 to n
+for (i = 1; i <= 10; i++) // ❌
     a[i] = 0;

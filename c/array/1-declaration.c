@@ -5,5 +5,4 @@ int a[10];
 
 // Using a macro to define the length of an array is an excellent practice:
 #define N 10
-
 int a[N];

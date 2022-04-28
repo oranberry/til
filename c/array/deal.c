@@ -1,4 +1,9 @@
-/* Deals a random hand of cards */
+// Deals a random hand of cards
+
+// The rand() function is used in C/C++ to generate random numbers in the range [0, RAND_MAX).
+// If random numbers are generated with rand() without first calling srand(),
+// your program will create the same sequence of numbers each time it runs.
+// srand(time(NULL));
 
 #include <stdbool.h> /* C99 only */
 #include <stdio.h>
@@ -12,8 +17,7 @@ int main(void)
 {
   bool in_hand[NUM_SUITS][NUM_RANKS] = {false};
   int num_cards, rank, suit;
-  const char rank_code[] = {'2', '3', '4', '5', '6', '7', '8',
-                            '9', 't', 'j', 'q', 'k', 'a'};
+  const char rank_code[] = {'2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a'};
   const char suit_code[] = {'c', 'd', 'h', 's'};
 
   srand((unsigned)time(NULL));
@@ -26,6 +30,7 @@ int main(void)
   {
     suit = rand() % NUM_SUITS; /* picks a random suit */
     rank = rand() % NUM_RANKS; /* picks a random rank */
+
     if (!in_hand[suit][rank])
     {
       in_hand[suit][rank] = true;
