@@ -25,3 +25,8 @@ for (i = 0; i < n; i++)
     a[i] = 0;
 // We also have the option of using pointer arithmetic
 // instead of subscripting to access the elements of the array.
+
+int *p = malloc(sizeof(int) * 3); // sizeof(int) * 3 == 12
+// 이렇게 하면 12바이트를 할당하면서 대상 메모리를 4바이트(int) 단위로 나누어서 사용하려는 의도까지 쉽게 파악할 수 있게 된다.
+
+short *p = malloc(sizeof(short) * 6); // sizeof(short) * 6 == 12

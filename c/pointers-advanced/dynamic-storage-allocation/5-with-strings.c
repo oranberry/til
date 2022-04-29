@@ -13,11 +13,10 @@ p = malloc(10000);
 
 // To allocate space for a string of n characters:
 p = malloc(n + 1);
-// Because char value requires exactly one byte of storage.
-// Each character requires one byte of memory; adding 1 to n leaves room for the null character.
+// Because each character requires one byte of memory; adding 1 to n leaves room for the null character.
 // where p is a char * variable
 // The generic pointer that malloc returns will be converted to char * when the assignment is performed;
-// no case is necessary.
+// no cast is necessary.
 // ⚠️❗️ When using malloc to allocate space for a string, don't forget to include room for the null character. ❗️⚠️
 
 // Memory allocated using malloc isn’t cleared or initialized,
