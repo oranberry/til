@@ -1,9 +1,9 @@
 #include <cstdlib>
 #include <iostream>
 
-using namespace std; // makes std avialable
+using namespace std; // makes std available
 
-/* Program inputs two numbers x and y and outputs their sum */
+// Program inputs two numbers x and y and outputs their sum
 
 int main()
 {
