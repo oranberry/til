@@ -15,7 +15,7 @@ int main()
     int a, b, sum;
     scanf("%d %d", &a, &b);
 
-    sum = a + b;
+    sum = a + b; // 변수의 연산으로 변수의 값을 저장할 수 있다.
     printf("%d + %d = %d\n", a, b, sum);
 
     return 0;
