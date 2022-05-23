@@ -1,7 +1,10 @@
 ## Doubly Linked Lists
 
-There is a type of linked list that allows us to go in both directions—forward and reverse—in a linked list. It is the **doubly linked list**. In addition to its element member, a node in a doubly linked list stores two pointers, a **next** link and a **prev** link, which point to the next node in the list and the previous node in the list, re- spectively. Such lists allow for a great variety of quick update operations, including efficient insertion and removal at any given position.
+Removing any node other than the head in a singly linked list is not easy, since we do not have a quick way of accessing the node immediately preceding the one we want to remove.
 
+There is a type of linked list that allows us to go in both directions—forward and reverse—in a linked list. It is the **doubly linked list**. In addition to its element member, a node in a doubly linked list stores two pointers, a **next** link and a **prev** link, which point to the next node in the list and the previous node in the list, respectively. Such lists allow for a great variety of quick update operations, including efficient insertion and removal at any given position.
+
+**Header and Trailer Sentinels**  
 To simplify programming, it is convenient to add special nodes at both ends of a doubly linked list: a **header** node just before the head of the list, and a **trailer** node just after the tail of the list. These “dummy” or **sentinel** nodes do not store any elements. They provide quick access to the first and last nodes of the list. In particular, the header’s next pointer points to the first node of the list, and the prev pointer of the trailer node points to the last node of the list.
 
 Nodes contains the next link, a second link pointing to the previous node, and data.  
