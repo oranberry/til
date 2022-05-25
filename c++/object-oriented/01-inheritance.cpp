@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 // Person (base class)
 class Person
 {
