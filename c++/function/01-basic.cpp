@@ -1,11 +1,20 @@
-// ✨ 함수란?
+// ✨ 함수(Function)란?
+// A function is a chunk of code that can be called to perform some well-defined task
 // 하나의 특별한 목적의 작업을 수행하기 위해 독립적으로 설계된 코드의 집합
 // 호출한 함수에게 값을 되돌려주는, return value가 있는 함수와 없는 함수로 분류
+
+// We need to provide the following information to the compiler:
+// Return type
+// Function name
+// Argument list
+// Function body
 
 #include <iostream>
 using namespace std;
 
 const float PIE = 3.14;
+// Function declaration
+// return type, its name, and its argument list -> prototype
 void cheers(int n);
 float circle(int x);
 
@@ -24,6 +33,7 @@ int main()
 
     return 0;
 }
+// Function Definition
 // 리턴값이 없는 타입
 void cheers(int n)
 {
