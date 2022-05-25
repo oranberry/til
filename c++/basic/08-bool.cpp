@@ -1,3 +1,7 @@
+// 💫 C++ Fundamental Types
+
+// 👉🏻 bool - Boolean value, either true or false
+
 #include <iostream>
 using namespace std;
 
