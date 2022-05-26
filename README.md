@@ -3,15 +3,14 @@
 ### Categories
 
 - API
-- Bootstrap
 - C
 - C++
 - Data Structure
 - Database
 - Git
 - HTML/CSS
+- HTTP
 - JavaScript
 - Linux
 - React
-- Reading Note
 <hr/>
