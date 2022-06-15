@@ -1,3 +1,4 @@
+// Binary Search (이진 탐색) - O(log n)
 #include <stdio.h>
 
 int binarySearch(int[], int, int);
