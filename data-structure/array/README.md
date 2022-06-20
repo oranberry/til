@@ -1,4 +1,14 @@
-## 💫 **Arrays**
+## 💫 **Arrays 배열**
+
+Arrays are a simple data structure for storing lots of similar items. They exist in all programming languages, and are used as the basis for most other data structures.
+
+- **What an Array is?**
+  An Array is a collection of items. The items could be integers, strings, DVDs, games, books, etc. The items are stored in neighboring (contiguous) memory locations. Because they're stored together, checking through the entire collection of items is straightforward.
+
+2. Implementing basic Array operations.
+   - Inserting Items Into an Array
+   - Deleting Items From an Array
+   - Searching for Items in an Array
 
 - Arrays are data structures where all the items are identified by an integer value starting with 0 (**index**).
 - Every single item (value) can be identified with a given index.

@@ -3,11 +3,14 @@ using namespace std;
 
 int main()
 {
-
     const int SIZE = 10;
 
-    // this is how we can create an array for 10 integers (size can not be changed later)
+    // This is how we can create an array for 10 integers (size can not be changed later)
     int nums[SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    // 🔎 The Array can only hold up to 10. If we get a 11th element, we'll need to make a new Array!
+    // 왜 array 크기를 처음부터 크게 만들지 않을까？ -> 불필요한 메모리를 너무 많이 차지하게 된다.
+    // If you make an Array with 1000000 spaces, the computer will reserve memory to hold 1000000 element, even if you only put 10 DVDs into it.
 
     // we can access items with indexes in O(1)
     cout << nums[2] << "\n"; // 3
