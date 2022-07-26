@@ -1,28 +1,29 @@
 ## 💫 **Arrays 배열**
 
-Arrays are a simple data structure for storing lots of similar items. They exist in all programming languages, and are used as the basis for most other data structures.
+배열은 데이터 구조의 하나로, 데이터를 1열로 나열한 것(collection of data elements)이다. 데이터는 연속된 메모리 영역에 순서대로 저장된다. 연속된 영역에 저장돼 있어서 첨자를 사용해서 메모리의 주소를 계산할 수 있다 (Each accessed by specifying position). 따라서, 각 데이터에 바로 접근할 수 있다. 이 것을 ‘임의 접근(random access)’이라고 한다.
 
-- **What an Array is?**
-  An Array is a collection of items. The items could be integers, strings, DVDs, games, books, etc. The items are stored in neighboring (contiguous) memory locations. Because they're stored together, checking through the entire collection of items is straightforward.
+Arrays are a simple data structure for storing lots of similar items (All of same type). They exist in all programming languages, and are used as the basis for most other data structures.
 
-2. Implementing basic Array operations.
-   - Inserting Items Into an Array
-   - Deleting Items From an Array
-   - Searching for Items in an Array
+Elements of an array may be of any type including characters, integers, strings, games, books, etc. The items are stored in neighboring (contiguous) memory locations. Because they're stored together, checking through the entire collection of items is straightforward.
 
-- Arrays are data structures where all the items are identified by an integer value starting with 0 (**index**).
-- Every single item (value) can be identified with a given index.
-- Usually we can store items of the same type.
-- We can create multi-dimensional arrays as well. Every single item (value) can be identified with 2 indexes - rowIndex and columnIndex.
-- **Advantage**: accessing the items based on index (**random access**).
-- The items of the array are located right next to each other in the main memory (RAM, Random Access Memory) - so they can accessed by the index.  
+- Implementing basic Array operations.
+  - Inserting Items Into an Array
+  - Deleting Items From an Array
+  - Searching for Items in an Array
+
+* Arrays are data structures where all the items are identified by an integer value starting with 0 (**index**).
+* Every single item (value) can be identified with a given index.
+* Usually we can store items of the same type.
+* We can create multi-dimensional arrays as well. Every single item (value) can be identified with 2 indexes - rowIndex and columnIndex.
+* **Advantage**: accessing the items based on index (**random access**).
+* The items of the array are located right next to each other in the main memory (RAM, Random Access Memory) - so they can accessed by the index.  
   memory address = array's address + index \* data size (ex. 4 btye (32 bits))
-- **O(1) running time**.
-- There are two types of array, static arrays and dynamic arrays
+* **O(1) running time**.
+* There are two types of array, static arrays and dynamic arrays
   - static array (size of the array does not change )
   - dynamic array (size of the array may change dynamically)
-- More complex data structures (ex. stacks queues and hash-tables) rely heavily on arrays because of **random indexing - O(1)** access of items with known indexes
-- **Numerical methods** use arrays: most the operations can be achieved quite efficiently - matrix related operations.
+* More complex data structures (ex. stacks queues and hash-tables) rely heavily on arrays because of **random indexing - O(1)** access of items with known indexes
+* **Numerical methods** use arrays: most the operations can be achieved quite efficiently - matrix related operations.
 
 #### Arrays Operations
 

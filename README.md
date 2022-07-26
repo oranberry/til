@@ -2,7 +2,6 @@
 
 ### Categories
 
-- API
 - C
 - C++
 - Data Structure

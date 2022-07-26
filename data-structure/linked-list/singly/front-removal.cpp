@@ -1,10 +1,13 @@
+// 💫 Removal from the front of a singly linked list
 // We essentially undo the operations performed for insertion.
 // We first save a pointer to the old head node and advance the head pointer to the next node in the list.
-// We then delete the old head node.
+// then delete the old head node.
+
 // We assume that the user has checked that the list is nonempty before applying this operation.
 // The function deletes the node in order to avoid any memory leaks.
 // We do not return the value of the deleted node.
 // If its value is desired, we can call the front function prior to the removal.
+
 void StringLinkedList::removeFront() // remove front item
 {
     StringNode *old = head; // save current head

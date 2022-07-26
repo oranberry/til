@@ -1,5 +1,7 @@
+// 💫 Insertion to the Front of a Singly Linked List
 // We can easily insert an element at the head of a singly linked list
-// We first create a new node, and set its elem value to the desired string and set its next link to point to the current head of the list.
+// We first create a new node, and set its elem value to the desired string
+// and set its next link to point to the current head of the list.
 // We then set head to point to the new node.
 
 void StringLinkedList::addFront(const string &e) // add to front of lit
