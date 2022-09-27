@@ -4,12 +4,10 @@
 
 - C
 - C++
-- Data Structure
-- Database
+- Data Structure & Algorithm
 - Git
 - HTML/CSS
-- HTTP
 - JavaScript
 - Linux
-- React
+- Python
 <hr/>
