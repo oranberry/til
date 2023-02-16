@@ -5,7 +5,7 @@ elif "python" in a and "you" not in a: print("python")
 elif "shirt" not in a : print("shirt")
 elif "need" in a : print("need")
 else: print("none")
-# 가장 먼저 참ㅁ이 되는 세번째 조건이 실행되어 "shirt"가 출력된다.
+# 가장 먼저 참이 되는 세번째 조건이 실행되어 "shirt"가 출력된다.
 
 
 # Q2. while문을 사용해 1부터 1000까지의 자연수 중 3의 배수의 합을 구해보기.
