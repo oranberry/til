@@ -5,8 +5,8 @@ function add(a, b){
 }
 const sum = add;
 
-console.log(sum(1, 2));
-console.log(add(1, 2));
+console.log(sum(1, 2));     // 3
+console.log(add(1, 2));     // 3
 
 // 만약 인자를 전달하지 않는 다면? 오류 X
 console.log(add()); // NaN

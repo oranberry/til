@@ -1,5 +1,6 @@
-// typeof: 데이터 타입을 확인
-// 값을 타입 문자열로 반환
+// typeof: 데이터 타입을 확인을 위한 연산자(operator)
+// 값을 타입 문자열로 반환한다. e.g. undefined, string, number, object, funtion, ...
+
 let variable;
 console.log(typeof variable); // undefined
 
