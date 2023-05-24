@@ -1,8 +1,8 @@
 // Quiz
 // num의 숫자가 짝수이면 👍🏻, 홀수라면 👎🏻을 출력하도록
-
 let num = 2;
 
+// if
 if (num % 2 === 0){
     console.log('👍🏻');
 } else {
@@ -10,5 +10,5 @@ if (num % 2 === 0){
 }
 
 // ternary
-let emoji = num % 2 === 0 ? '👍🏻' : '👎🏻';
-console.log(emoji);
+let result = num % 2 === 0 ? '👍🏻' : '👎🏻';
+console.log(result);

@@ -1,3 +1,5 @@
+// 함수를 이용한 계산기 예제
+
 const calculator = {
     plus: function(a , b){
         return a + b;
@@ -27,5 +29,3 @@ console.log(minusResult);
 console.log(divideResult);
 console.log(multipleResult);
 console.log(powerResult);
-
-

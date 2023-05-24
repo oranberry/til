@@ -24,6 +24,7 @@ if (fruit === 'apple'){
 
 fruit === 'apple' ? console.log('🍎') : console.log('😍');
 
+// emoji 변수 선언 후 삼항 조건 연산자의 결괏값을 할당한다. 
 let emoji = fruit === 'apple' ? '🍎' : '😍';
 console.log(emoji);
 

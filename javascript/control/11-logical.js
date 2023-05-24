@@ -1,4 +1,4 @@
-// 논리연산자 Logical operator
+// 제어문에서 자주 쓰이는 연산자 - 논리연산자 Logical operator
 // && 그리고
 // || 또는
 // ! 부정 (단항연산자)

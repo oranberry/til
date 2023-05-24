@@ -9,12 +9,13 @@ class Fruit {
     this.name = name;
     this.emoji = emoji;
   }
-
+  // 멤버 함수
   display = () => {
     console.log(`${this.name}: ${this.emoji}`);
   };
 }
 
+// 클래스를 사용해서 만들어진 객체는 인스턴스(instance)
 // apple은 Fruit 클래스의 인스턴스이다.
 const apple = new Fruit('apple', '🍎');
 // orange은 Fruit 클래스의 인스턴스이다.

@@ -6,20 +6,23 @@
  * 라틴문자(0-9, a-z, A-Z), _(underscore), 달러 기호($) 사용가능
  * 특수문자 ❌ (_, $ 두 가지는 예외)
  * 공백 ❌
- * 식별자는 특수문자를 제외한 문자, 언더스코어(_), 달러 기호($)로 시작
+ * 식별자는 특수문자와 숫자를 제외한 문자, 언더스코어(_), 달러 기호($)로 시작
  * 숫자로 시작 ❌
  * 예약어(reserved word)는 식별자로 ❌
  * 예약어: continue, break, class, thins, const, for, do, if, else, ... 
- * 대소문자 구분함 firstname != firstName
+ * 대소문자 구분함 firstname != firstName (case-sensitive)
  */
 
 /* 네이밍 컨벤션(naming convention) 
  * 하나 이상의 영어 단어로 구성된 식별자로 만들 때 가독성 좋게 단어를 한눈에 구분하기 위한 규칙
  * 1. 카멜 케이스: camelCase
  * 2. 스네이크 케이스: snake_case
- * 3. 파스칼 케이스: PascalCase * 
- * 변수, 함수 이름: camelCase ✅
- * 생성자 함수, 클래스 이름: PascalCase ✅
+ * 3. 파스칼 케이스: PascalCase 
+ * variable, function, method: camelCase ✅
+ * 생성자 함수, class, component: PascalCase ✅
+ * private function: an underscore (_) in front of a variable/function/method (camelCase)
+ * constant: UPPERCASE, UPPER_SNAKE_CASE
+ * file: lowercase.jpg
  */
 
 // 나쁜예제 💩

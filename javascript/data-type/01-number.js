@@ -1,14 +1,14 @@
 // 1️⃣ 숫자 타입(number)
 // 숫자는 따옴표로 감싸지 않고 그대로 적는다. 
 
-let integer = 123; // 정수
-console.log(integer); // 123
+let integer = 123;      // 정수
+console.log(integer);   // 123
 
-let negative = -123; // 음수
-console.log(negative); // -123
+let negative = -123;    // 음수
+console.log(negative);  // -123
 
-let double = 1.23; // 소수(실수)
-console.log(double); // 1.23
+let double = 1.23;      // 소수(실수)
+console.log(double);    // 1.23
 
 // 💥 따옴표로 감싼 숫자는 문자열이 되기 때문에 숫자가 아니다.
 notInteger = '123';
@@ -16,14 +16,14 @@ console.log(typeof notInteger); // string
 
 
 // 무한 값 알아보기
-console.log(0 / 123); // 0
-console.log(123 / 0); // Infinity
+console.log(0 / 123);   // 0
+console.log(123 / 0);   // Infinity
 
-console.log(typeof Infinity); // number
-console.log(Infinity - 100); // Infinity
+console.log(typeof Infinity);   // number
+console.log(Infinity - 100);    // Infinity
 
-console.log(123 / -0); // -Infinity
-console.log(-2 / 0); // -Infinity
+console.log(123 / -0);  // -Infinity
+console.log(-2 / 0);    // -Infinity
 
 // 무한에서 무한을 뺴는 것은 성립하지 않는다. 
 console.log(Infinity - Infinity); // NaN (Not a Number)
@@ -31,7 +31,7 @@ console.log(Infinity - Infinity); // NaN (Not a Number)
 // 💥 NaN는 이름과는 다르게 값이 숫자라는 점 주의!
 console.log(typeof NaN); // number
 
-console.log(0 / 0); // NaN (Not a Number)
+console.log(0 / 0);         // NaN (Not a Number)
 console.log(123 / 'text'); // NaN (Not a Number)
 
 

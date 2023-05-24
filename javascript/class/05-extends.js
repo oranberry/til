@@ -1,65 +1,44 @@
-// class Tiger {
-//   constructor(color) {
-//     this.color = color;
-//   }
-//   eat() {
-//     console.log('먹자!');
-//   }
-//   sleep() {
-//     console.log('잔다');
-//   }
-// }
-
-// class Dog {
-//   constructor(color) {
-//     this.color = color;
-//   }
-//   eat() {
-//     console.log('먹자!');
-//   }
-//   sleep() {
-//     console.log('잔다');
-//   }
-//   play() {
-//     console.log('놀자아~!');
-//   }
-// }
+// 클래스 확장 (상속)
 
 class Animal {
   constructor(color) {
     this.color = color;
   }
   eat() {
-    console.log('먹자!');
+    console.log('밥 먹는 중');
   }
   sleep() {
-    console.log('잔다');
+    console.log('자는 중');
   }
 }
+
 
 class Tiger extends Animal {}
-const tiger = new Tiger('노랑이');
-console.log(tiger);
-tiger.sleep();
-tiger.eat();
+
+const tiger = new Tiger('노랑');
+console.log(tiger);         // Tiger { color: '노랑' }
+tiger.sleep();              // 자는 중
+tiger.eat();                // 밥 먹는 중
+
 
 class Dog extends Animal {
-  constructor(color, ownerName) {
+  // overriding constructor
+  constructor(color, name) {
     super(color);
-    this.ownerName = ownerName;
+    this.name = name;
   }
   play() {
-    console.log('놀자아~!');
+    console.log('노는 중');
   }
-
-  // 오버라이딩 overriding
+  // overridding a method
   eat() {
-    super.eat();
-    console.log('강아지가 먹는다!');
+    super.eat();    // 부모 기능 유지
+    console.log('다 먹고 뭐하지?');
   }
 }
-const dog = new Dog('빨강이', '엘리');
-console.log(dog);
-dog.sleep();
-dog.eat();
-dog.play();
+
+const dog = new Dog('핑크', '보리');
+
+console.log(dog);         // Dog { color: '핑크', name: '보리' }
+dog.eat();                // 밥 먹는 중\n 다 먹고 뭐하지?
+dog.play();               // 노는 중

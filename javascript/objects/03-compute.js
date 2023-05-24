@@ -1,19 +1,21 @@
+// 객체 동적으로 접근하기
 const obj = {
     name: 'oranberry',
     age: 20,
 };
 
 
-// 코딩하는 시점에, 정적으로 접근이 확정될 때
+// 코딩하는 시점에, 정적으로 접근이 확정될 때 마침표 표기법 사용
 obj.name;
 obj.age;
 
 
-// 동적으로 속성에 접근하고 싶을 때 대괄호 표기법 사용!
+// 동적으로 속성에 접근하고 싶을 때는 대괄호 표기법 사용!
 function getValue(obj, key){
     return obj[key];
 }
 console.log(getValue(obj, 'name'));     // oranberry
+
 
 // 동적으로 사용한 예제 1
 function addKey(obj, key, value) {
@@ -21,6 +23,7 @@ function addKey(obj, key, value) {
 }
 addKey(obj, 'job', 'engineer');
 console.log(obj);                       // { name: 'oranberry', age: 20, job: 'engineer' }
+
 
 // 동적으로 사용한 예제 2
 function deleteKey(obj, key) {

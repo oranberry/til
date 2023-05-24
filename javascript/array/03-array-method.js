@@ -1,11 +1,11 @@
 // 배열의 함수들 
-// 배열 자체를 변경하는지, 새로운 배열을 반환하는지! 
+// 배열 자체를 변경하는지, 새로운 배열을 반환하는지에 포인트를 두고 살펴보기!
 const fruits = ['🍌', '🍎', '🍋', '🍒', '🍉'];
 
 
 // ✨ isArray(): 특정한 오브젝트가 배열인지 체크 
 console.log(Array.isArray(fruits));   // true
-console.log(Array.isArray({}));       // false
+console.log(Array.isArray({}));       // false (object)
 
 
 // 특정한 아이템의 위치(인덱스)를 찾을때
@@ -55,18 +55,18 @@ fruits.splice(2);
 console.log(fruits);                  //  ['🍌', '🍋' ]
 // splice(시작 인덱스, 제거할 요소 개수, 바꿀 값)
 // splice로 값을 제거한 자리에 다른 값을 넣을 수도 있다. 세 번째 자리부터 바꿀 값을 넣어준다.
-fruits.splice(1, 1, '🍎', '🍓');      // 배열 자체를 수정(업데이트)
-console.log(fruits);                 // [ '🍌', '🍎', '🍓' ]
+fruits.splice(1, 0, '🍎', '🍓');      // 배열 자체를 수정(업데이트)
+console.log(fruits);                 // [ '🍌', '🍎', '🍓', '🍋' ]
 
 
 // ✨ slice(): 잘라진 새로운 배열을 만듬
 // slice(start, end): start 포함, end 불포함
 let newArr = fruits.slice(0, 2);
 console.log(newArr);                  // [ '🍌', '🍎' ]
-console.log(fruits);                  // [ '🍌', '🍎', '🍓' ]
+console.log(fruits);                  // [ '🍌', '🍎', '🍓', '🍋' ]
 // slice(start): start 인덱스부터 끝까지 모든 요소 포함
 newArr = fruits.slice(-2); 
-console.log(newArr);                   // [ '🍎', '🍓' ]
+console.log(newArr);                   // [ '🍓', '🍋' ]
 
 
 // ✨ concat(): 여러개의 배열을 붙여줌
@@ -85,6 +85,7 @@ console.clear();
 // ✨ flat(): 중첩 배열을 하나의 배열로 쫙 펴기
 // creates a new array with all sub-array elements concatenated 
 // into it recursively up to the specified depth.
+// flat(): 1단계 flat
 // flat(depth)
 let arr = [0, 1, 2, [3, 4]];
 console.log(arr.flat());    // [ 0, 1, 2, 3, 4 ]
@@ -118,7 +119,7 @@ console.log(arr);           // [0, 'A', 'A', 0, 'a', 'a', 'a', 'a']
 // creates and returns a new string by concatenating all of the elements in an array (or an array-like object)
 // separated by commas or a specified separator string. 
 let text = arr.join();
-console.log(text);          // 0,A,A,0,a,a,a,a
+console.log(text);          // 0,A,A,0,a,a,a,a (자동으로 , 사용)
 
 text = arr.join(' | ');
 console.log(text);          // 0 | A | A | 0 | a | a | a | a

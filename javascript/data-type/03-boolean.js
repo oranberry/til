@@ -66,7 +66,7 @@ console.log('0' < true); // true (0 < 1)
 
 // Falsy 거짓인 값 
 // 형 변환 후 false가 되는 값들을 거짓인 값(falsy value)라고 한다. 
-// !! 연산자: 0 -> false   1 -> true
+// !! 연산자: 값을 true나 false으로 변환해 줄 수 있다.
 console.log(!!0);
 console.log(!!-0);
 console.log(!!''); // 비어있는 문자열
@@ -80,6 +80,6 @@ console.log(!!NaN);
 // 형 변환 후 true가 되는 값들을 참인 값(truthy value)라고 한다.
 console.log(!!1);
 console.log(!!-1);
-console.log(!!'text'); // 비어있지 않은 문자열
+console.log(!!'false'); // 비어있지 않은 문자열
 console.log(!!{}); // 비어있는 object (비어있지만 object 자체가 존재하기 때문에 True로 간주됨)
 console.log(!!Infinity);

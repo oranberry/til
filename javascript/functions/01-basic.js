@@ -1,5 +1,7 @@
-// 함수를 만들 떄는 보통 function 예약어를 사용하거나 => (화살표) 기호를 사용한다.
+// 함수 (function)
+// 함수는 반복해서 사용할 수 있는 코드 조각
 
+// 함수를 만들 떄는 보통 function 예약어를 사용하거나 => (화살표) 기호를 사용한다.
 // 1️⃣ 함수 선언문 (function declaration statement)
 function a() {
     console.log("Hello, world");
@@ -29,15 +31,24 @@ c();                    // Hello,
 
 
 // 사용예제 1
+function sayHello(){
+	console.log("Hello!");
+}
+// 함수는 호출하지 않으면 실행되지 않음!
+sayHello();     // Hello!
+sayHello();     // Hello!
+
+
+// 사용예제 2
 function sum(a, b) {
     return a + b;
 }
 
-// 함수는 호출하지 않으면 실행되지 않는다.
 const result = sum(1, 2);
 console.log(result);
 
-// 사용예제 2
+
+// 사용예제 3
 function fullName(firstName, lastName){
     return `${lastName} ${firstName} 👋🏻`;
 }

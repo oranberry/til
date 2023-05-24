@@ -1,19 +1,36 @@
-## What is JavaScript?
+# What is JavaScript?
 
-JavaScript는 상호작용하는(interactive) 웹 페이지를 만들기 위해 사용되는 프로그래밍 언어로, 1995년 Netscape Communications Corporation에서 Brendan Eich가 개발했다.
+JavaScript(JS) is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add **interactivity** to pages e.g. you might have seen sliders, alerts, click interactions, popups, etc on different websites — all of that is built using JavaScript.
 
-JavaScript는 client-side scripting language로, 서버가 아닌 사용자의 컴퓨터에서 실행되었다. 이를 이용하여 웹 페이지 요소를 조작하고, 사용자 상호작용을 처리하며, 계산을 수행하고, 웹 서버와 통신하는 등의 기능을 수행할 수 있다. 또한 Node.js를 사용하여 서버 측에서도 JavaScript를 사용하여 확장성과 효율성이 높은 웹 어플리케이션을 만들 수 있게 되었다.
+JavaScript is a lightweight, **interpreted**, or **just-in-time compiled** programming language with **first-class functions**. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications, and so on. 자바스크립트 엔진이 있는 어떤 곳에서든 사용 할 수 있다.
 
-모든 브라우저는 JavaScript를 해석하고 실행할 수 있는 자바스크립트 엔진을 내장하고 있고 브라우저 뿐만 아니라 Node.js도 자바스크립트 엔진을 내장하고 있다. 즉, 자바스크립트는 브라우저 환경 또는 Node.js 환경에서 실행할 수 있다. 기본적으로 브라우저에서 동작하는 코드는 Node.js 환경에서도 동일하게 작동하지만, 한 가지 주의해야 할 점은 브라우저와 Node.js의 용도가 다르다는 것이다. 브라우저는 HTML, CSS, 자바스크립트를 실행해 웹페이지를 브라우저 화면에 렌더링하는 것이 주된 목적이지만 Node.js는 브라우저 외부에서 자바스크립트 실행 환경을 제공하는 것이 주된 목적이다.
-
-이처럼 브라우저는 ECMAScript와 DOM, BOM, Canvas, XMLHttpRequest, fetch, requestAnimation Frame, SVG, Web Storage, Web Component, Web Worker 같은 클라이언트 사이드 Web API를 지원한다. Node.js는 클라이언트 사이드 Web API를 지원하지 않고 ECMAScript와 Node.js 고유의 API를 지원한다.
-
+JavaScript is a prototype-based, multi-paradigm, single-threaded, **dynamic language**, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.  
 ⭐️ 자바스크립트는 명령형(imperative), 함수형(functional), 프로토타입 기반(prototype-based) 객체 지향 프로그래밍을 지원하는 멀티 패러다임 프로그래밍 언어이다.
 
-<br>
-<hr>
+모든 브라우저는 JavaScript를 해석하고 실행할 수 있는 자바스크립트 엔진을 내장하고 있고 브라우저 뿐만 아니라 Node.js도 자바스크립트 엔진을 내장하고 있다. 기본적으로 브라우저에서 동작하는 코드는 Node.js 환경에서도 동일하게 작동하지만, 한 가지 주의해야 할 점은 브라우저와 Node.js의 용도가 다르다는 것이다. 브라우저는 HTML, CSS, 자바스크립트를 실행해 웹페이지를 브라우저 화면에 렌더링하는 것이 주된 목적이지만 Node.js는 브라우저 외부에서 자바스크립트 실행 환경을 제공하는 것이 주된 목적이다.
 
-## History of JavaScript
+이처럼 브라우저는 ECMAScript와 DOM APIs, Network APIs, Audio/Video APIs, Storage APIs 같은 클라이언트 사이드 Web API를 지원한다(Front-end). Node.js는 클라이언트 사이드 Web API를 지원하지 않고 ECMAScript와 Crypto, HTTP, File, OS, Path, Stream 같은 Node.js API를 지원한다(Back-end).
+
+<br>
+
+### 참고 자료
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript  
+https://javascript.info  
+https://www.codeguage.com/courses/js  
+https://en.wikipedia.org/wiki/ECMAScript  
+https://kangax.github.io/compat-table/es5
+
+<br>
+
+# History of JavaScript
+
+JavaScript was initially created by Brendan Eich of NetScape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially, it was named Mocha by the creator, which was later renamed LiveScript. In 1996, about a year later after the release, NetScape decided to rename it to JavaScript with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript.
+
+https://dev.to/iarchitsharma/the-history-of-javascript-5e98  
+https://roadmap.sh/guides/history-of-javascript
+
+<br>
 
 초창기 자바스크립트는 웹페이지의 보조적인 기능을 수행하기 위해 한정적인 용도로 사용되었다. 이 시기에 대부분의 로직은 주로 웹 서버에서 실행되었고, 브라우저는 서버로부터 전달받은 HTML과 CSS를 단순히 **렌더링**하는 수준이었다.
 
@@ -44,20 +61,41 @@ JavaScript는 client-side scripting language로, 서버가 아닌 사용자의 �
    이러한 요구에 맞춰 CBD(component based development) 방법론을 기반으로 하는 SPA가 대중화되면서 Angular, React, Vue.js 등 다양한 SPA 프레임워크/라이브러리 또한 많이 사용하고 있다.
 
 <br>
-<hr>
 
-## How to Run JavaScript?
+# JavaScript Versions
+
+JavaScript was invented by Brendan Eich, and in 1997 it became an ECMA standard. ECMAScript is the official language name. ECMAScript versions include ES1, ES2, ES3, ES5, and ES6
+
+<br>
+
+### 참고 자료
+
+https://www.educative.io/blog/javascript-versions-history  
+https://roadmap.sh/guides/history-of-javascript
+
+<br>
+
+# How to Run JavaScript?
 
 자바스크립트는 HTML, CSS와 함께 웹을 구성하는 요소 중 하나라 웹 브라우저에서 동작하는 유일한 프로그래밍 언어이다. 자바스크립트는 개발자가 별도의 컴파일 작업을 수행하지 않는 **인터프리터 언어(interpreter language)** 이다. 대부분 모던 자바스크립트 엔진은 인터프리터와 컴파일러의 장점을 결합해 비교적 처리 속도가 느린 인터프리터의 단점을 해결했다. 인터프리터는 소스코드를 즉시 실행하고 컴파일러는 빠르게 동작하는 머신 코드를 생성하고 최적화한다. 이를 통해 컴파일 단계에서 추가적인 시간이 필요함에도 더욱 빠르게 코드를 실행할 수 있다. 현재는 컴파일러와 인터프리터의 기술적 구분이 점차 모호해져 가는 추세이지만, 자바스크립트는 런타임에 컴파일되며 실행 파일이 생성되지 않고 인터프리터의 도움 없이 실행할 수 없기 때문에 컴파일러 언어라고 할 수 없다.
 
+JavaScript can be run in the browser by including the external script file using the script tag, writing it within the HTML page using the script tag again, running it in the browser console or you can also use REPL(Read-Eval-Print-Loop).
+
 <br>
-<hr>
 
-## 자바스크립트의 기본 문법 규칙
+### 참고 자료
 
-### 1. 세미콜론
+https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html  
+https://www.digitalocean.com/community/tutorials/how-to-write-your-first-javascript-program  
+https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console
 
-자바스크립트는 하나의 명령이 끝날 때 세미콜론을 붙여도 되고 붙이지 않아도 된다. 세미콜론을 붙이지 않으면 대부분의 경우 자바스크립트 엔진이 자동으로 세미콜론을 붙여준다. 하지만 일부 명령에서는 가끔 에러가 발생한다. 그러므로 혹시 모를 에러 발생을 방지하고 통일성을 위해 모든 명령 뒤에 세미콜론을 붙이기를 권장한다.
+<br>
+
+# 자바스크립트의 기본 문법 규칙
+
+## 1. 세미콜론(Semicolon)
+
+자바스크립트는 하나의 명령이 끝날 때 세미콜론을 붙여도 되고 붙이지 않아도 된다. 세미콜론을 붙이지 않으면 대부분의 경우 자바스크립트 엔진이 자동으로 세미콜론을 붙여준다. 하지만 일부 명령에서는 가끔 에러가 발생한다. 그러므로 혹시 모를 에러 발생을 방지하고 통일성을 위해 모든 명령 뒤에 세미콜론을 붙이는 것이 좋다.
 
 ```javascript
 console.log('Hello, world!');
@@ -69,11 +107,11 @@ console.log('Hello');
 
 <br>
 
-### 2. 주석
+## 2. 주석(Comment)
 
-다른 사람이 작성한 코드를 볼 때 코드에 관한 별도의 설명이 없으면 코드를 이해하기 어려운 경우가 많다. 이럴 때 사람만 알아볼 수 있도록 설명을 작성한 부분을 주석(comment)이라고 한다. 주석은 코드에 영향을 미치지 않는다. 보통 주석은 코드에 관한 자세한 설명을 작성하거나 특정 코드를 임시로 사용하지 않게 할 때 사용한다.
+다른 사람이 작성한 코드를 볼 때 코드에 관한 별도의 설명이 없으면 코드를 이해하기 어려운 경우가 많다. 이럴 때 사람만 알아볼 수 있도록 설명을 작성한 부분을 주석이라고 한다. 주석은 코드에 영향을 미치지 않아서 보통 코드에 관한 자세한 설명을 작성하거나 특정 코드를 임시로 사용하지 않게 할 때 사용한다.
 
-#### 2-1. 한 줄 주석
+### 2-1. 한 줄 주석(Single Line Comment)
 
 주석이 한 줄일 때는 주석 앞에 //를 넣는다. 코드 앞에 //를 붙이면 // 뒤로는 모두 주석이 된다.
 
@@ -87,7 +125,7 @@ console.log('Hello, comment!');
 console.log('Hello, comment!'); // Hello, comment! 출력
 ```
 
-#### 2-2. 여러 줄 주석
+### 2-2. 여러 줄 주석(Multi-line Comment)
 
 한 줄로 작성하기에는 주석이 너무 길 때 여러 줄 주석을 사용한다. 그 사이의 내용은 몇 줄이든 상관없이 모두 주석이 된다.
 
@@ -98,7 +136,7 @@ console.log('Hello, comment!'); */
 
 <br>
 
-### 3. 들여쓰기
+## 3. 들여쓰기(Indentation)
 
 자바스크립트는 들여쓰기에 제한이 없다. 보통 스페이스로 2칸, 4칸, 탭으로 공백을 두지만, 1칸이나 3칸으로 들여쓰기를 해도 코드 실행에는 아무런 문제가 없다. 하지만 들여쓰기는 통일하는 것이 좋다. 들어쓰기를 하는 것만으로도 그 부분이 다른 의미가 있는 부분이라는 것을 다른 사람에게 알려줄 수 있어서 코드의 가독성이 향상되기 때문이다.
 

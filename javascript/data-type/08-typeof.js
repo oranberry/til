@@ -7,7 +7,7 @@ console.log(typeof variable); // undefined
 variable = '';
 console.log(typeof variable); // string
 
-variable = 123; // 할당된 값에 따라 타입이 결정됨!
+variable = 123;               // 할당된 값에 따라 타입이 결정됨! (dynamic, weakly typed programming language)
 console.log(typeof variable); // number
 
 variable = {};

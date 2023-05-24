@@ -1,8 +1,9 @@
-// Higher Order Functions (HoF)
+// Higher Order Functions (HoF): 고차 함수
+// 인자로 함수를 받거나 (콜백함수) 함수를 반환하는 함수를 고차함수라고 한다. 
 // built-in in Array object
 
 // ✨ forEach(): executes a provided function once for each array element
-// 배열을 빙글 빙글 돌면서 원하는것(콜백함수)을 할때
+// 배열을 빙글 빙글 돌면서 원하는것(콜백함수)을 할때 forEach()
 let array = ['a', 'b', 'c'];
 array.forEach(element => console.log(element));
 // 'a'

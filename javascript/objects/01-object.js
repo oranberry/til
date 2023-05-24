@@ -1,4 +1,5 @@
 // 객체 (object)
+// 서로 연관있는 속성(property)과 행동(함수, method)을 묶어주기 위한 복합 데이터
 // 객체는 자료형의 일종으로 다양한 값을 모아 둔 또다른 값이다.
 // 객체의 종류는 크게 배열(array), 함수(function), 배열이나 함수가 아닌 객체로 나눌 수 있다. 
 
@@ -8,13 +9,14 @@
 // 객체는 함수와 배열을 포함하는 개념이라서 {}를 사용해 만든 객체를 객체 리터럴이라고 부른다.
 // 다만, 함수와 배열은 주로 객체 리터럴과는 다른 목적으로 사용하기 때문에 임의 속성을 넣고자 한다면 객체 리터럴을 사용한다.
 
-// 객체 리터럴 만드는 방법
-// 1️⃣ Object literal { key: value }
-// 2️⃣ new Object()
-// 3️⃣ Object.create();
+// 객체를 만드는 방법
+// 1️⃣ 객체 리터럴 이용: Object literal { key: value }
+// 2️⃣ object 클래스 이용: new Object()
+// 3️⃣ object 클래스 안에 있는 create 함수 이용: Object.create();
 
+// 객체 리터럴을 사용하는 방법
 // key - 문자, 숫자, 문자열, 심볼
-// value - 원시값, 객체(햠수)
+// value - 원시값, 객체(햠수) 둘 다 가능
 
 let apple = {
     name: 'apple',
@@ -23,16 +25,21 @@ let apple = {
     ['hello-bye1']: '👋🏻',
 };
 
-// 속성, 데이터에 접근하기 위해서는
-console.log(apple.name);        // apple.name 마침표 표기법 (dot notation)
+
+// 속성, 데이터 접근
+console.log(apple.name);        // 마침표 표기법 (dot notation)
 console.log(apple['name']);     // 대괄호 표기법 (bracket notation)
+
+// dash가 들어있는 key는 마침표 표기법으로 접근 x (대괄호 표기법 사용할 것)
 console.log(apple['hello-bye']); 
+
 
 // 속성 추가
 apple.emoji = '🍎';
 console.log(apple.emoji);       // 🍎
 console.log(apple['emoji']);    // 🍎
 console.log(apple);
+
 
 // 속성 삭제
 delete apple.emoji;
